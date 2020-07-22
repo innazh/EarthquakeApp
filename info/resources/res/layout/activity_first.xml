@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/holo_orange_light" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:layout_gravity="center" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Assignment Six"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="30sp" android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:layout_gravity="center" android:paddingTop="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EARTHQUAKES"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/holo_orange_dark" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minimum_magnitude"/>
+        <EditText android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/textViewMagnitude" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/holo_orange_light" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Number of Earthquakes:"/>
+        <EditText android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/textViewLimit" android:layout_width="35dp" android:layout_height="wrap_content" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/holo_orange_light" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_by"/>
+        <Spinner android:id="@+id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/holo_orange_light" android:paddingBottom="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="20sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/buttonStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_date" android:textAllCaps="false" style="?android:attr/buttonBarButtonStyle"/>
+        <TextView android:textSize="20sp" android:textColor="@android:color/black" android:id="@+id/textViewStart" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:textSize="30sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/firstButton" android:background="@android:color/holo_orange_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit"/>
+</LinearLayout>
